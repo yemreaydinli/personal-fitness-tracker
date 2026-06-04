@@ -1,12 +1,14 @@
 <?php
-require_once '../config/database.php';
-require_once '../includes/header.php';
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
-// Redirect to dashboard if the user is already logged in
 if (isset($_SESSION['kullanici_id'])) {
-    header("Location: ../dashboard.php");
+    header("Location: /~st24360859015/dashboard.php");
     exit;
 }
+
+require_once '../config/database.php';
 
 $hata = '';
 
@@ -21,18 +23,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->execute([$kadi]);
         $kullanici = $stmt->fetch();
         
-        // Project Rule: Verify hashed password and use Sessions
         if ($kullanici && password_verify($sifre, $kullanici['sifre_hash'])) {
-            $_SESSION['kullanici_id'] = $kullanici['id'];
+            $_SESSION['kullanici_id'] = $kullanici['id'] ?? $kullanici['kullanici_id'] ?? 1;
             $_SESSION['kullanici_adi'] = $kullanici['kullanici_adi'];
-            
-            header("Location: ../dashboard.php");
+            header("Location: /~st24360859015/dashboard.php");
             exit;
         } else {
             $hata = "Hatalı kullanıcı adı veya şifre!";
         }
     }
 }
+require_once '../includes/header.php';
 ?>
 
 <div class="row justify-content-center">

@@ -2,7 +2,6 @@
 require_once '../config/database.php';
 require_once '../includes/header.php';
 
-// Zaten giriş yapmış biri kayıt sayfasına gelirse dashboard'a yönlendir
 if (isset($_SESSION['kullanici_id'])) {
     header("Location: ../dashboard.php");
     exit;
@@ -18,14 +17,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($kadi) || empty($sifre)) {
         $hata = "Lütfen tüm alanları doldurun.";
     } else {
-        // Kullanıcı adının benzersiz olup olmadığını kontrol et
         $stmt = $pdo->prepare("SELECT id FROM kullanicilar WHERE kullanici_adi = ?");
         $stmt->execute([$kadi]);
         
         if ($stmt->rowCount() > 0) {
             $hata = "Bu kullanıcı adı zaten alınmış.";
         } else {
-            // Şifreyi Hashle (Proje Zorunluluğu)
             $hashli_sifre = password_hash($sifre, PASSWORD_DEFAULT); 
             
             $insert = $pdo->prepare("INSERT INTO kullanicilar (kullanici_adi, sifre_hash) VALUES (?, ?)");
