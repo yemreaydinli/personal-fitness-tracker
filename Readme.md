@@ -13,7 +13,6 @@ Uygulama, framework kullanılmadan saf (yalın) PHP ile geliştirilmiştir.
 * **Arayüz:** Bootstrap 5 kullanılarak tamamen mobil uyumlu (responsive) ve modern bir tasarım (Sticky footer dahil).
 
 ## Ekran Görüntüleri
-*(Buraya uygulamanızın çalıştığını gösteren en az 2 adet ekran görüntüsü ekleyin)*
 
 ![Dashboard Ekranı](https://github.com/user-attachments/assets/6805a5c9-98df-4981-a9de-35f32f2fe332)
 
