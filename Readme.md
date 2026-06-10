@@ -15,12 +15,14 @@ Uygulama, framework kullanılmadan saf (yalın) PHP ile geliştirilmiştir.
 ## Ekran Görüntüleri
 *(Buraya uygulamanızın çalıştığını gösteren en az 2 adet ekran görüntüsü ekleyin)*
 
-![Dashboard Ekranı](ekran-goruntusu-1-linki-buraya)
-![Antrenman Ekleme Ekranı](ekran-goruntusu-2-linki-buraya)
+![Dashboard Ekranı](<img width="1919" height="911" alt="Ekran görüntüsü 2026-06-10 152613" src="https://github.com/user-attachments/assets/6805a5c9-98df-4981-a9de-35f32f2fe332" />
+)
+![Giriş Ekleme Ekranı](<img width="1919" height="909" alt="Ekran görüntüsü 2026-06-10 152623" src="https://github.com/user-attachments/assets/c5a2a9e2-d9ae-4c8c-bffd-6cc16df68af8" />
+)
 
 ## Tanıtım Videosu
 Projenin nasıl çalıştığını (kayıt olma, giriş yapma ve CRUD işlemleri) anlatan 1-3 dakikalık videoyu aşağıdan izleyebilirsiniz:
-[Proje Tanıtım Videosunu İzlemek İçin Tıklayın](YOUTUBE_VEYA_DRIVE_LINKI_BURAYA)
+[Proje Tanıtım Videosunu İzlemek İçin Tıklayın](https://youtu.be/vrl6wkmT0hU)
 
 ## Kurulum ve Kullanım (Lokal Ortam İçin)
 1. Bu repoyu bilgisayarınıza klonlayın.
