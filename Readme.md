@@ -15,10 +15,9 @@ Uygulama, framework kullanılmadan saf (yalın) PHP ile geliştirilmiştir.
 ## Ekran Görüntüleri
 *(Buraya uygulamanızın çalıştığını gösteren en az 2 adet ekran görüntüsü ekleyin)*
 
-![Dashboard Ekranı](<img width="1919" height="911" alt="Ekran görüntüsü 2026-06-10 152613" src="https://github.com/user-attachments/assets/6805a5c9-98df-4981-a9de-35f32f2fe332" />
-)
-![Giriş Ekleme Ekranı](<img width="1919" height="909" alt="Ekran görüntüsü 2026-06-10 152623" src="https://github.com/user-attachments/assets/c5a2a9e2-d9ae-4c8c-bffd-6cc16df68af8" />
-)
+![Dashboard Ekranı](https://github.com/user-attachments/assets/6805a5c9-98df-4981-a9de-35f32f2fe332)
+
+![Giriş Ekleme Ekranı](https://github.com/user-attachments/assets/c5a2a9e2-d9ae-4c8c-bffd-6cc16df68af8)
 
 ## Tanıtım Videosu
 Projenin nasıl çalıştığını (kayıt olma, giriş yapma ve CRUD işlemleri) anlatan 1-3 dakikalık videoyu aşağıdan izleyebilirsiniz:
